@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formularios (select, option)</title>
+</head>
+<body>
+	<h1>formularios (select, option)</h1>
+	<hr>
+	<form action="post" action="">
+		<fieldset>
+			<legend><h2>lista desplegable</h2></legend>
+			<label for="lenguajes">lenguajes de programacion</label>
+			<br>
+			<select name="lenguajes" id="lenguajes">
+				<option value="">seleccione...</option>
+				<option value="java">java</option>
+				<option value="c#">c#</option>
+				<option value="python" selected="selected">python</option>
+				<option value="ruby">ruby</option>
+			</select>
+			<br>
+			<label for="deportes">deportes</label>
+			<br>
+			<select name="deportes" id="deportes" size="4" multiple="multiple">
+				<option value="futbol">furbol</option>
+				<option value="baloncesto">baloncesto</option>
+				<option value="tennis">tennis</option>
+				<option value="ciclismo">ciclismo</option>
+			</select>
+		</fieldset>
+	</form>
+</body>
+</html>
