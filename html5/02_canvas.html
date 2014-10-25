@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>graficos en 2D - (canvas)</title>
+</head>
+<body>
+	<h1>graficos en 2D - (canvas)</h1>
+	<hr>
+	
+
+	<h3>circulo:</h3>
+	 <canvas id="tutorial" width="120" height="120" >
+         Tu navegador no soporta canvas. Actualizalo
+      </canvas>
+    <script type="text/javascript">
+        var c=document.getElementById("tutorial");
+        var cxt=c.getContext("2d");
+ 
+        cxt.fillStyle ="red";
+        cxt.beginPath();
+        cxt.arc(60,60,50,0,Math.PI*2,true);
+                cxt.closePath();
+        cxt.fill();
+    </script>
+    <hr>
+    <hr>
+   
+
+
+    <h3>cuadrado</h3>
+	<canvas id="cuadrado"></canvas> 
+	<script>
+	var cuadrado = document.getElementById('cuadrado');
+	var cnvs = cuadrado.getContext('2d');
+	cnvs.fillStyle = '#751e53';
+	cnvs.fillRect(0,0,100,100);
+	</script>
+	<hr>
+	<hr>
+
+<h3>triangulo</h3>
+<canvas id="triangulo"></canvas> 
+<script>
+        var triangulo = document.getElementById('triangulo');
+        var cnvs3 = triangulo.getContext('2d');
+         cnvs3.fillStyle "##FF0000";
+         cnvs3.beginPath();
+		 cnvs3.moveTo(10,110);
+		 cnvs3.lineTo(110,10);
+		 cnvs3.lineTo(210,110);
+   		 cnvs3.fill;
+</script>   		   
+<hr>
+<hr>
+
+<h3>hola mundo</h3>
+
+
+
+
+</body>
+</html>
